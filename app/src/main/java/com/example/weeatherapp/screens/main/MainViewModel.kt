@@ -1,15 +1,10 @@
 package com.example.weeatherapp.screens.main
 
-import android.util.Log
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.example.weeatherapp.data.DataOrException
 import com.example.weeatherapp.model.Weather
 import com.example.weeatherapp.repository.WeatherRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel

@@ -39,23 +39,20 @@ fun WeatherAppBar(
     CenterAlignedTopAppBar(
         title = {
             Text(text = title,
-                color = MaterialTheme.colorScheme.primary,
                 style = MaterialTheme.typography.titleLarge,
                 fontSize = 15.sp,
-                fontWeight = FontWeight.Bold,
+                fontWeight = FontWeight.Bold
                 )
         },
         actions = {
             if (isMainScreen) {
                 IconButton(onClick = {}) {
                     Icon(imageVector = Icons.Default.Search,
-                        contentDescription = "Search Icon",
-                        tint = MaterialTheme.colorScheme.primary)
+                        contentDescription = "Search Icon")
                 }
                 IconButton(onClick = {}) {
                     Icon(imageVector = Icons.Rounded.Menu,
-                        contentDescription = "More Menu Icon",
-                        tint = MaterialTheme.colorScheme.primary)
+                        contentDescription = "More Menu Icon")
                 }
             } else {
                 Box {}
@@ -65,7 +62,6 @@ fun WeatherAppBar(
             if (icon != null) {
                 Icon(imageVector = icon,
                     contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.clickable{
                         onButtonClicked.invoke()
                     })
